@@ -1,0 +1,49 @@
+<div id="home">
+    <div class="container">
+        <div class="row">
+            <div class="col-8 offset-2">
+
+                <h1>{{msg}}</h1>
+                <h2>You can search for drinks here</h2>
+
+
+                <h2>Search by name</h2>
+                <form class="clearfix mb-4" action="POST">
+                    <div class="form-group">
+                        <label for="search-name">Cocktail name</label>
+                        <input type="text" id="search-name" class="form-control" aria-describedby="search-name"
+                            placeholder="Enter search name">
+                    </div>
+
+                    <button id="submit-name" class="btn btn-primary float-right">Submit</button>
+                </form>
+
+                <h2>Search by ingredient</h2>
+                <form class="clearfix mb-4" action="POST">
+                    <div class="form-group">
+                        <label for="search-ingredient">Cocktail ingredient</label>
+                        <input type="text" id="search-ingredient" class="form-control" aria-describedby="search-ingredient"
+                            placeholder="Enter search ingredient">
+                    </div>
+
+                    <button id="submit-ingredient" class="btn btn-primary float-right">Submit</button>
+                </form>
+
+                {{!-- here we display the search results --}}
+                {{!-- <h3>Examples:</h3>
+                <ul id="example-list" class="list-group">
+                    {{#each examples}}
+                    <li data-id="{{this.id}}" class="list-group-item">
+                        <a href="example/{{this.id}}">{{this.text}}</a>
+                        <button class="btn btn-danger float-right delete">ｘ</button>
+                    </li>
+                    {{/each}}
+                </ul> --}}
+            </div>
+        </div>
+    </div>
+</div>
+<a href="/">← Back To Home</a>
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="/js/search.js"></script>
