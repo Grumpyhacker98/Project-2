@@ -1,4 +1,3 @@
-
 var submitName = $("#submit-name");
 var submitIngredient = $("#submit-ingredient");
 
@@ -6,14 +5,11 @@ function nameSearch() {
   event.preventDefault();
 
   var searchName = $("#search-name")
-  .val()
-  .trim();
+    .val()
+    .trim();
 
   nameUrl =
     "https://www.thecocktaildb.com/api/json/v1/1/search.php?s=" + searchName;
-
-  console.log(searchName);
-  console.log(nameUrl);
 
   $.ajax({
     url: nameUrl,
@@ -27,15 +23,12 @@ function ingredientSearch() {
   event.preventDefault();
 
   var searchIngredient = $("#search-ingredient")
-  .val()
-  .trim();
+    .val()
+    .trim();
 
   ingredientUrl =
     "https://www.thecocktaildb.com/api/json/v1/1/filter.php?i=" +
     searchIngredient;
-
-  console.log(searchIngredient);
-  console.log(ingredientUrl);
 
   $.ajax({
     url: ingredientUrl,
