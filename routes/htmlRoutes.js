@@ -9,7 +9,7 @@ module.exports = function(app) {
     //     examples: dbExamples
     //   });
     // });
-    res.render("home");
+    res.render("index");
   });
 
   // this renders specific cocktails from the mysql for the homepage
