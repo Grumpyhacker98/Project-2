@@ -3,16 +3,16 @@ var db = require("../models");
 module.exports = function(app) {
   // Load index page
   app.get("/", function(req, res) {
-    // db.Example.findAll({}).then(function(dbExamples) {
-    //   res.render("index", {
-    //     msg: "Welcome!",
-    //     examples: dbExamples
-    //   });
-    // });
-    res.render("index");
+    db.Mixed.findAll({}).then(function(dbExamples) {
+      res.render("index", {
+        msg: "Welcome!",
+        Mixeds: dbExamples
+      });
+    });
+    // res.render("index");
   });
 
-  // this renders specific cocktails from the mysql for the homepage
+  // this was where you clicked on the specific exampleNote and have it pull up additional information
   // Load example page and pass in an example by id
   // app.get("/example/:id", function(req, res) {
   //   db.Example.findOne({ where: { id: req.params.id } }).then(function(dbExample) {
