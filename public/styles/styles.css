@@ -46,11 +46,15 @@ a {
   color: yellow;
 }
 
-.examples {
+.drinks {
   min-height: 500px;
 }
 
 .searches {
   /* width: 40%; */
   padding: 10px;
+}
+
+.subut {
+  color: yellow;
 }

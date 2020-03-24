@@ -13,61 +13,48 @@
         </div>
     </div>
 
- {{!-- Search Forms    --}}
-<div class="row">
-    <div class="col-xs-6"> 
-        <form class="clearfix mb-4 searches" action="GET">
-            <div class="form-group">
-                <label for="search-name">Search by name</label>
-                <input type="text" id="search-name" class="form-control" aria-describedby="search-name"
-                    placeholder="Enter search name">
-            </div>
+    {{!-- Drink Display --}}
+    <div class="row">
+        <div class="col-md-12 drinks">
 
-            <button id="submit-name" class="btn btn-primary float-right">Submit</button>
-        </form>
-    
-
-    <div class="col-xs-6"> 
-        <form class="clearfix mb-4 searches" action="GET">
-            <div class="form-group">
-                <label for="search-ingredient">Search by ingredient</label>
-                <input type="text" id="search-ingredient" class="form-control" aria-describedby="search-ingredient"
-                    placeholder="Enter search ingredient">
-            </div>
-
-            <button id="submit-ingredient" class="btn btn-primary float-right">Submit</button>
-        </form>
+        </div>
     </div>
-    
-</div>
 
-    {{!-- here we display the search results --}}
-    {{!-- <h3>Examples:</h3>
-                <ul id="example-list" class="list-group">
-                    {{#each examples}}
-                    <li data-id="{{this.id}}" class="list-group-item">
-                        <a href="example/{{this.id}}">{{this.text}}</a>
-                        <button class="btn btn-danger float-right delete">ｘ</button>
-                    </li>
-                    {{/each}}
-                </ul> --}}
-    <div id="search-display">
+    {{!-- Search Forms    --}}
+    <div class="row">
+        <div class="col-md-6">
+            <div class="input-group mb-3">
+                <input type="text" class="form-control" placeholder="Search by Drink Name" aria-label="search-name"
+                    aria-describedby="search-name">
+                <div class="input-group-append">
+                    <button class="btn btn-outline-secondary subut" type="button">Submit</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6">
+            <div class="input-group mb-3">
+                <input type="text" class="form-control" placeholder="Search by Ingredient"
+                    aria-label="search-ingredient" aria-describedby="search-ingredient">
+                <div class="input-group-append">
+                    <button class="btn btn-outline-secondary subut" type="button">Submit</button>
+                </div>
+            </div>
+        </div>
 
     </div>
 
+    <div class="row">
+
+        <div class="col-md-12 text-center links">
+            <div class="home-link">
+                <a href="/">Home</a>
+            </div>
+        </div>
+
+    </div>
 
 </div>
-
-
-  <div class="row">
-
-    <div class="col-md-12 text-center">
-      <div class="home-link">
-        <a href="/">Home Page</a>
-      </div>
-    </div>
-
-  </div>
 
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="/js/search.js"></script>
