@@ -27,7 +27,7 @@ background-color: rgb(61, 61, 61);
 
 .title {
   font-size: 10rem;
-  margin-top: 1%;
+  margin-top: 5%;
 }
 
 .tagline {
@@ -44,4 +44,13 @@ background-color: rgb(61, 61, 61);
 
 a {
   color: yellow;
+}
+
+.examples {
+  min-height: 500px;
+}
+
+.searches {
+  /* width: 40%; */
+  padding: 10px;
 }

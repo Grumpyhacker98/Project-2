@@ -1,36 +1,48 @@
-<div id="home">
-    <div class="container">
-        <div class="row">
-            <div class="col-8 offset-2">
+<div class="container" id="home">
 
-                <h1>{{msg}}</h1>
-                <h2>You can search for drinks here</h2>
+    {{!-- Title --}}
+    <div class="row">
+        <div class="col-md-12 text-center">
+            <h1 class="title">MY BREW</h1>
+        </div>
+    </div>
 
+    <div class="row">
+        <div class="tagline col-md-12 text-center">
+            <p>Find the drinks you love... Love the drinks you find</p>
+        </div>
+    </div>
 
-                <h2>Search by name</h2>
-                <form class="clearfix mb-4" action="GET">
-                    <div class="form-group">
-                        <label for="search-name">Cocktail name</label>
-                        <input type="text" id="search-name" class="form-control" aria-describedby="search-name"
-                            placeholder="Enter search name">
-                    </div>
+ {{!-- Search Forms    --}}
+<div class="row">
+    <div class="col-xs-6"> 
+        <form class="clearfix mb-4 searches" action="GET">
+            <div class="form-group">
+                <label for="search-name">Search by name</label>
+                <input type="text" id="search-name" class="form-control" aria-describedby="search-name"
+                    placeholder="Enter search name">
+            </div>
 
-                    <button id="submit-name" class="btn btn-primary float-right">Submit</button>
-                </form>
+            <button id="submit-name" class="btn btn-primary float-right">Submit</button>
+        </form>
+    
 
-                <h2>Search by ingredient</h2>
-                <form class="clearfix mb-4" action="GET">
-                    <div class="form-group">
-                        <label for="search-ingredient">Cocktail ingredient</label>
-                        <input type="text" id="search-ingredient" class="form-control" aria-describedby="search-ingredient"
-                            placeholder="Enter search ingredient">
-                    </div>
+    <div class="col-xs-6"> 
+        <form class="clearfix mb-4 searches" action="GET">
+            <div class="form-group">
+                <label for="search-ingredient">Search by ingredient</label>
+                <input type="text" id="search-ingredient" class="form-control" aria-describedby="search-ingredient"
+                    placeholder="Enter search ingredient">
+            </div>
 
-                    <button id="submit-ingredient" class="btn btn-primary float-right">Submit</button>
-                </form>
+            <button id="submit-ingredient" class="btn btn-primary float-right">Submit</button>
+        </form>
+    </div>
+    
+</div>
 
-                {{!-- here we display the search results --}}
-                {{!-- <h3>Examples:</h3>
+    {{!-- here we display the search results --}}
+    {{!-- <h3>Examples:</h3>
                 <ul id="example-list" class="list-group">
                     {{#each examples}}
                     <li data-id="{{this.id}}" class="list-group-item">
@@ -39,14 +51,23 @@
                     </li>
                     {{/each}}
                 </ul> --}}
-                <div id="search-display">
+    <div id="search-display">
 
-                </div>
-            </div>
-        </div>
     </div>
+
+
 </div>
-<a href="/">← Back To Home</a>
+
+
+  <div class="row">
+
+    <div class="col-md-12 text-center">
+      <div class="home-link">
+        <a href="/">Home Page</a>
+      </div>
+    </div>
+
+  </div>
 
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="/js/search.js"></script>
