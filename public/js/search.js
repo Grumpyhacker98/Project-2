@@ -15,7 +15,22 @@ function nameSearch() {
     url: nameUrl,
     method: "GET"
   }).then(function(response) {
-    console.log(response);
+    var drink = response.drinks;
+
+    for (var i = 0; i < drink.length; i++) {
+      newDrink = $("<div>");
+
+      // newUrl = $("<img>");
+      // newUrl.addClass("gif")
+      // newUrl.attr("src", info[i].images.fixed_height_still.url);
+
+      newText = $("<p>");
+      newText.text("Name: " + drink[i].strDrink);
+
+      $(newDrink).append(newText);
+
+      $("#search-display").append(newDrink);
+    }
   });
 }
 
@@ -34,7 +49,22 @@ function ingredientSearch() {
     url: ingredientUrl,
     method: "GET"
   }).then(function(response) {
-    console.log(response);
+    var drink = response.drinks;
+
+    for (var i = 0; i < drink.length; i++) {
+      newDrink = $("<div>");
+
+      // newUrl = $("<img>");
+      // newUrl.addClass("gif")
+      // newUrl.attr("src", info[i].images.fixed_height_still.url);
+
+      newText = $("<p>");
+      newText.text("Name: " + drink[i].strDrink);
+
+      $(newDrink).append(newText);
+
+      $("#search-display").append(newDrink);
+    }
   });
 }
 
