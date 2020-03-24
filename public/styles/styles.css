@@ -27,4 +27,21 @@ background-color: rgb(61, 61, 61);
 
 .title {
   font-size: 10rem;
+  margin-top: 1%;
+}
+
+.tagline {
+  font-size: 25px;
+  font-family: 'Roboto', sans-serif;
+  margin-top: -30px;
+}
+
+.links {
+  color: yellow;
+  border: 2px solid yellow;
+  border-radius: 5px;
+}
+
+a {
+  color: yellow;
 }
