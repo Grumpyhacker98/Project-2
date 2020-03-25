@@ -1,9 +1,9 @@
 var db = require("../models");
 
-module.exports = function(app) {
+module.exports = function (app) {
   // Load index page
-  app.get("/", function(req, res) {
-    db.Mixed.findAll({}).then(function(dbExamples) {
+  app.get("/", function (req, res) {
+    db.Mixed.findAll({}).then(function (dbExamples) {
       res.render("index", {
         msg: "Welcome!",
         Mixeds: dbExamples
@@ -23,7 +23,7 @@ module.exports = function(app) {
   // });
 
   // the create page
-  app.get("/create", function(req, res) {
+  app.get("/create", function (req, res) {
     // db.Example.findAll({}).then(function(dbExamples) {
     //   res.render("index", {
     //     msg: "Welcome!",
@@ -34,7 +34,7 @@ module.exports = function(app) {
   });
 
   // the search page
-  app.get("/search", function(req, res) {
+  app.get("/search", function (req, res) {
     // db.Example.findAll({}).then(function(dbExamples) {
     //   res.render("index", {
     //     msg: "Welcome!",
@@ -44,8 +44,19 @@ module.exports = function(app) {
     res.render("search");
   });
 
+  // the search page
+  app.get("/saved", function (req, res) {
+    // db.Example.findAll({}).then(function(dbExamples) {
+    //   res.render("index", {
+    //     msg: "Welcome!",
+    //     examples: dbExamples
+    //   });
+    // });
+    res.render("saved");
+  });
+
   // Render 404 page for any unmatched routes
-  app.get("*", function(req, res) {
+  app.get("*", function (req, res) {
     res.render("404");
   });
 };
