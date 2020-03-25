@@ -22,4 +22,48 @@ background-color: rgb(61, 61, 61);
   position: fixed;
   top: 0;
   left: 0;
+  font-family: 'Passion One', cursive;
+}
+
+.title {
+  font-size: 10rem;
+  margin-top: 5%;
+}
+
+.tagline {
+  font-size: 25px;
+  font-family: 'Roboto', sans-serif;
+  margin-top: -30px;
+}
+
+.links {
+  color: yellow;
+  border: 2px solid yellow;
+  border-radius: 5px;
+  text-decoration: none !important;
+}
+
+a {
+  color: yellow;
+}
+
+.drinks {
+  min-height: 500px;
+}
+
+.drinks-search {
+  min-height: 438px;
+}
+
+.searches {
+  /* width: 40%; */
+  padding: 10px;
+}
+
+.subut {
+  color: yellow;
+}
+
+.lint {
+  text-decoration: none !important;
 }

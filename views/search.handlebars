@@ -1,0 +1,75 @@
+<div class="container" id="home">
+
+    {{!-- Title --}}
+    <div class="row">
+        <div class="col-md-12 text-center">
+            <h1 class="title">MY BREW</h1>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="tagline col-md-12 text-center">
+            <p>Find the drinks you love... Love the drinks you find</p>
+        </div>
+    </div>
+
+    
+    {{!-- Search Forms    --}}
+    <div class="row">
+        <div class="col-md-6">
+            <div class="input-group mb-3">
+                <input type="text" class="form-control" placeholder="Search by Drink Name" aria-label="search-name"
+                    aria-describedby="search-name">
+                <div class="input-group-append">
+                    <button class="btn btn-outline-secondary subut" type="button">Submit</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6">
+            <div class="input-group mb-3">
+                <input type="text" class="form-control" placeholder="Search by Ingredient"
+                    aria-label="search-ingredient" aria-describedby="search-ingredient">
+                <div class="input-group-append">
+                    <button class="btn btn-outline-secondary subut" type="button">Submit</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    {{!-- Drink Display --}}
+    <div class="row">
+        <div class="col-md-12 drinks-search">
+
+        </div>
+    </div>
+
+
+      {{!-- Links --}}
+  <div class="row">
+
+    <div class="col-md-6 text-center">
+      <a href="/" class="lint">
+        <div class="links">
+          Home
+        </div>
+      </a>
+    </div>
+
+    <div class="col-md-6 text-center lint">
+      <a href="/create" class="lint">
+        <div class="links">
+          My Drinks
+        </div>
+      </a>
+    </div>
+
+
+  </div>
+
+</div>
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="/js/search.js"></script>
