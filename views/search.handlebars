@@ -8,7 +8,7 @@
 
 
                 <h2>Search by name</h2>
-                <form class="clearfix mb-4" action="GET">
+                <form class="clearfix mb-4">
                     <div class="form-group">
                         <label for="search-name">Cocktail name</label>
                         <input type="text" id="search-name" class="form-control" aria-describedby="search-name"
@@ -19,7 +19,7 @@
                 </form>
 
                 <h2>Search by ingredient</h2>
-                <form class="clearfix mb-4" action="GET">
+                <form class="clearfix mb-4">
                     <div class="form-group">
                         <label for="search-ingredient">Cocktail ingredient</label>
                         <input type="text" id="search-ingredient" class="form-control" aria-describedby="search-ingredient"
@@ -27,6 +27,17 @@
                     </div>
 
                     <button id="submit-ingredient" class="btn btn-primary float-right">Submit</button>
+                </form>
+
+                <h2>Search by ID</h2>
+                <form class="clearfix mb-4">
+                    <div class="form-group">
+                        <label for="search-ID">Cocktail ID</label>
+                        <input type="text" id="search-ID" class="form-control" aria-describedby="search-ID"
+                            placeholder="Enter the personal ID">
+                    </div>
+
+                    <button id="submit-ID" class="btn btn-primary float-right">Submit</button>
                 </form>
 
                 {{!-- here we display the search results --}}
