@@ -1,13 +1,8 @@
 {
   "development": {
     "username": "root",
-<<<<<<< HEAD
-    "password": "Root",
-    "database": "exampledb",
-=======
     "password": "root",
     "database": "Mixed_db",
->>>>>>> 170a3d9cab75cbc988d9922082a57dc29a4f3f92
     "host": "localhost",
     "dialect": "mysql"
   },
