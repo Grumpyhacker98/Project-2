@@ -1,24 +1,26 @@
-
 <div id="home">
   <div class="container">
     <div class="row">
       <div class="col-8 offset-2">
 
-         {{!-- Title --}}
-  <div class="row">
-    <div class="col-md-12 text-center">
-      <h1 class="title">MY BREW</h1>
-    </div>
-  </div>
+        {{!-- Title --}}
+        <div class="row">
+          <div class="col-md-12 text-center">
+            <h1 class="title">MY BREW</h1>
+          </div>
+        </div>
 
-  <div class="row">
-    <div class="tagline col-md-12 text-center">
-      <p>Find the drinks you love... Love the drinks you find</p>
-    </div>
-  </div>
+        <div class="row">
+          <div class="tagline col-md-12 text-center">
+            <p>Find the drinks you love... Love the drinks you find</p>
+          </div>
+        </div>
+        <div class="col-md-12 text-center">
+          <h2 class="create-title">CREATE A DRINK!</h2>
+        </div>
 
         {{!-- a form for collecting information to add to mysql --}}
-        <form class="clearfix mb-4" action="POST">
+        <form class="clearfix former" action="POST">
 
           <div class="form-group">
             <label for="create-name">Name</label>
@@ -132,10 +134,8 @@
               placeholder="Enter eighths ingredient amount">
           </div>
 
-          <button id="submit-mixedDrink" class="btn btn-primary float-right">Submit</button>
+          <button id="submit-mixedDrink" class="btn btn-primary float-right form-butt">Submit</button>
         </form>
-
-        </ul>
       </div>
     </div>
 
@@ -145,35 +145,35 @@
 
 </div>
 
-   {{!-- Links --}}
-  <div class="row">
+{{!-- Links --}}
+<div class="row">
 
-    <div class="col-md-6 text-center">
-      <a href="/" class="lint">
-        <div class="links">
-          Home
-        </div>
-      </a>
-    </div>
-
-    <div class="col-md-6 text-center lint">
-      <a href="/search" class="lint">
-        <div class="links">
-          Search Drinks
-        </div>
-      </a>
-    </div>
-
-    <div class="col-md-6 text-center lint">
-      <a href="/saved" class="lint">
-        <div class="links">
-          My Drinks
-        </div>
-      </a>
-    </div>
-
-
+  <div class="col-md-6 text-center">
+    <a href="/" class="lint">
+      <div class="links">
+        Home
+      </div>
+    </a>
   </div>
+
+  <div class="col-md-6 text-center lint">
+    <a href="/search" class="lint">
+      <div class="links">
+        Search Drinks
+      </div>
+    </a>
+  </div>
+
+  <div class="col-md-6 text-center lint">
+    <a href="/saved" class="lint">
+      <div class="links">
+        My Drinks
+      </div>
+    </a>
+  </div>
+
+
+</div>
 
 
 
