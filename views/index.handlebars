@@ -1,38 +1,51 @@
-<div id="home">
-  <div class="container">
-    <div class="row">
-      <div class="col-8 offset-2">
+<div class="container" id="home">
 
-
-        <h1>{{msg}}</h1>
-        <h2>This is our Home Page!</h2>
-        <a href="/search">← Back To Search</a>
-        <a href="/create">← Back To Create</a>
-
-        <h3>Mixed drinks saved so far:</h3>
-        <ul id="example-list" class="list-group">
-          {{!-- {{#each examples}}
-          <li data-id="{{this.id}}" class="list-group-item">
-            <a href="example/{{this.id}}">{{this.text}}</a>
-            <button class="btn btn-danger float-right delete">ｘ</button>
-          </li>
-          {{/each}} --}}
-          {{#each Mixeds}}
-          <li data-id="{{this.id}}" class="list-group-item">
-
-            <p>{{this}}</a>
-            {{!-- <p>{{this.name}}</a>
-            <p>{{this.alcoholic}}</a>
-            <p>{{this.category}}</a> --}}
-
-            <button class="btn btn-danger float-right delete">ｘ</button>
-          </li>
-          {{/each}}
-        </ul>
-      </div>
+  {{!-- Title --}}
+  <div class="row">
+    <div class="col-md-12 text-center">
+      <h1 class="title">MY BREW</h1>
     </div>
   </div>
+
+  <div class="row">
+    <div class="tagline col-md-12 text-center">
+      <p>Find the drinks you love... Love the drinks you find</p>
+    </div>
+  </div>
+
+  {{!-- Drink Display --}}
+  <div class="row">
+    <div class="col-md-12 drinks">
+
+    </div>
+  </div>
+
+
+  {{!-- Links --}}
+  <div class="row">
+
+    <div class="col-md-6 text-center">
+      <a href="/search" class="lint">
+        <div class="links">
+          Search Drinks
+        </div>
+      </a>
+    </div>
+
+    <div class="col-md-6 text-center lint">
+      <a href="/create" class="lint">
+        <div class="links">
+          My Drinks
+        </div>
+      </a>
+    </div>
+
+{{!-- pop --}}
+
+  </div>
+
 </div>
+
 
 
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>

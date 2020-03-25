@@ -1,63 +1,75 @@
-<div id="home">
-    <div class="container">
-        <div class="row">
-            <div class="col-8 offset-2">
+<div class="container" id="home">
 
-                <h1>{{msg}}</h1>
-                <h2>You can search for drinks here</h2>
+    {{!-- Title --}}
+    <div class="row">
+        <div class="col-md-12 text-center">
+            <h1 class="title">MY BREW</h1>
+        </div>
+    </div>
 
+    <div class="row">
+        <div class="tagline col-md-12 text-center">
+            <p>Find the drinks you love... Love the drinks you find</p>
+        </div>
+    </div>
 
-                <h2>Search by name</h2>
-                <form class="clearfix mb-4">
-                    <div class="form-group">
-                        <label for="search-name">Cocktail name</label>
-                        <input type="text" id="search-name" class="form-control" aria-describedby="search-name"
-                            placeholder="Enter search name">
-                    </div>
-
-                    <button id="submit-name" class="btn btn-primary float-right">Submit</button>
-                </form>
-
-                <h2>Search by ingredient</h2>
-                <form class="clearfix mb-4">
-                    <div class="form-group">
-                        <label for="search-ingredient">Cocktail ingredient</label>
-                        <input type="text" id="search-ingredient" class="form-control" aria-describedby="search-ingredient"
-                            placeholder="Enter search ingredient">
-                    </div>
-
-                    <button id="submit-ingredient" class="btn btn-primary float-right">Submit</button>
-                </form>
-
-                <h2>Search by ID</h2>
-                <form class="clearfix mb-4">
-                    <div class="form-group">
-                        <label for="search-ID">Cocktail ID</label>
-                        <input type="text" id="search-ID" class="form-control" aria-describedby="search-ID"
-                            placeholder="Enter the personal ID">
-                    </div>
-
-                    <button id="submit-ID" class="btn btn-primary float-right">Submit</button>
-                </form>
-
-                {{!-- here we display the search results --}}
-                {{!-- <h3>Examples:</h3>
-                <ul id="example-list" class="list-group">
-                    {{#each examples}}
-                    <li data-id="{{this.id}}" class="list-group-item">
-                        <a href="example/{{this.id}}">{{this.text}}</a>
-                        <button class="btn btn-danger float-right delete">ｘ</button>
-                    </li>
-                    {{/each}}
-                </ul> --}}
-                <div id="search-display">
-
+    
+    {{!-- Search Forms    --}}
+    <div class="row">
+        <div class="col-md-6">
+            <div class="input-group mb-3">
+                <input type="text" class="form-control" placeholder="Search by Drink Name" aria-label="search-name"
+                    aria-describedby="search-name">
+                <div class="input-group-append">
+                    <button class="btn btn-outline-secondary subut" type="button">Submit</button>
                 </div>
             </div>
         </div>
+
+        <div class="col-md-6">
+            <div class="input-group mb-3">
+                <input type="text" class="form-control" placeholder="Search by Ingredient"
+                    aria-label="search-ingredient" aria-describedby="search-ingredient">
+                <div class="input-group-append">
+                    <button class="btn btn-outline-secondary subut" type="button">Submit</button>
+                </div>
+            </div>
+        </div>
+
     </div>
+
+
+    {{!-- Drink Display --}}
+    <div class="row">
+        <div class="col-md-12 drinks-search">
+
+        </div>
+    </div>
+
+
+      {{!-- Links --}}
+  <div class="row">
+
+    <div class="col-md-6 text-center">
+      <a href="/" class="lint">
+        <div class="links">
+          Home
+        </div>
+      </a>
+    </div>
+
+    <div class="col-md-6 text-center lint">
+      <a href="/create" class="lint">
+        <div class="links">
+          My Drinks
+        </div>
+      </a>
+    </div>
+
+
+  </div>
+
 </div>
-<a href="/">← Back To Home</a>
 
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="/js/search.js"></script>
