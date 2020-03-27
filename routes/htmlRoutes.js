@@ -29,7 +29,7 @@ module.exports = function(app) {
   // the saved info page
   app.get("/saved", function(req, res) {
     db.Mixed.findAll({}).then(function(dbExamples) {
-      console.log(dbExamples)
+      // console.log(dbExamples)
       res.render("saved", {
         msg: "Welcome!",
         display: dbExamples

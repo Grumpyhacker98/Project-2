@@ -71,6 +71,10 @@ function MIX() {
       .trim()
   };
 
+  if (drink.alcoholic === "") {
+    drink.alcoholic = false;
+  }
+
   console.log(drink);
 
   $.ajax({
@@ -81,6 +85,27 @@ function MIX() {
     url: "api/mixed",
     data: JSON.stringify(drink)
   });
+
+  $("#create-name").html("");
+  $("#create-alchaholic").html("");
+  $("#create-category").html("");
+  $("#create-glass").html("");
+  $("#create-Ing1").html("");
+  $("#create-Ing1Vol").html("");
+  $("#create-Ing2").html("");
+  $("#create-Ing2Vol").html("");
+  $("#create-Ing3").html("");
+  $("#create-Ing3Vol").html("");
+  $("#create-Ing4").html("");
+  $("#create-Ing4Vol").html("");
+  $("#create-Ing5").html("");
+  $("#create-Ing5Vol").html("");
+  $("#create-Ing6").html("");
+  $("#create-Ing6Vol").html("");
+  $("#create-Ing7").html("");
+  $("#create-Ing7Vol").html("");
+  $("#create-Ing8").html("");
+  $("#create-Ing8Vol").html("");
 }
 
 $(createDrink).on("click", MIX);

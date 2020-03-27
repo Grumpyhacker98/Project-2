@@ -2,7 +2,7 @@
 var $exampleText = $("#example-text");
 var $exampleDescription = $("#example-description");
 var $submitBtn = $("#submit");
-var $exampleList = $("#example-list");
+var $exampleList = $("#mixed-list");
 
 // The API object contains methods for each kind of request we'll make
 var API = {
@@ -24,7 +24,7 @@ var API = {
   },
   deleteExample: function(id) {
     return $.ajax({
-      url: "api/examples/" + id,
+      url: "api/mixed/" + id,
       type: "DELETE"
     });
   }
@@ -36,12 +36,12 @@ var refreshExamples = function() {
     var $examples = data.map(function(example) {
       var $a = $("<a>")
         .text(example.text)
-        .attr("href", "/example/" + example.id);
+        .attr("href", "/mixed/" + example.id);
 
       var $li = $("<li>")
         .attr({
           class: "list-group-item",
-          "data-id": example.id
+          "data-id": mixed.id
         })
         .append($a);
 
