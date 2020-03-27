@@ -19,9 +19,9 @@
         <div class="col-md-6">
             <div class="input-group mb-3">
                 <input type="text" class="form-control" placeholder="Search by Drink Name" aria-label="search-name"
-                    aria-describedby="search-name">
+                    aria-describedby="search-name" id="search-name">
                 <div class="input-group-append">
-                    <button class="btn btn-outline-secondary subut" type="button">Submit</button>
+                    <button class="btn btn-outline-secondary subut" id="submit-name" type="button">Submit</button>
                 </div>
             </div>
         </div>
@@ -29,9 +29,19 @@
         <div class="col-md-6">
             <div class="input-group mb-3">
                 <input type="text" class="form-control" placeholder="Search by Ingredient"
-                    aria-label="search-ingredient" aria-describedby="search-ingredient">
+                    aria-label="search-ingredient" aria-describedby="search-ingredient" id="search-ingredient">
                 <div class="input-group-append">
-                    <button class="btn btn-outline-secondary subut" type="button">Submit</button>
+                    <button class="btn btn-outline-secondary subut" id="submit-ingredient" type="button">Submit</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6">
+            <div class="input-group mb-3">
+                <input type="text" class="form-control" placeholder="Search by ID"
+                    aria-label="search-id" aria-describedby="search-id" id="search-ID">
+                <div class="input-group-append">
+                    <button class="btn btn-outline-secondary subut" id="submit-ID" type="button">Submit</button>
                 </div>
             </div>
         </div>
@@ -42,7 +52,9 @@
     {{!-- Drink Display --}}
     <div class="row">
         <div class="col-md-12 drinks-search">
+          <div id="search-display">
 
+          </div>
         </div>
     </div>
 
