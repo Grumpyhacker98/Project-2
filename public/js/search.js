@@ -69,7 +69,7 @@ function nameSearch() {
 
         // print ingredients
         newIngredient = $("<p>");
-        newIngredient.text("ingredient: " + ingredient[t] + " " + volume[t]);
+        newIngredient.text(ingredient[t] + ",  " + volume[t]);
 
         $(newDrink).append(newIngredient);
       }
@@ -148,7 +148,7 @@ function IdSearch() {
 
     // print name
     newText = $("<p>");
-    newText.text("Name: " + drink[0].strDrink + "  ID: " + drink[0].idDrink);
+    newText.text("Name: " + drink[0].strDrink + ", - ID: " + drink[0].idDrink);
     $(newDrink).append(newText);
 
     // these 2 arrays are for searching through the ingredients lists to print data
@@ -184,7 +184,7 @@ function IdSearch() {
 
       // print ingredients
       newIngredient = $("<p>");
-      newIngredient.text("ingredient: " + ingredient[t] + " " + volume[t]);
+      newIngredient.text(ingredient[t] + ",  " + volume[t]);
 
       $(newDrink).append(newIngredient);
     }
