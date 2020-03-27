@@ -16,6 +16,27 @@
   {{!-- Drink Display --}}
   <div class="row">
     <div class="col-md-12 drinks">
+      
+      <h3>Mixed Drinks:</h3>
+      <ul id="mixed-list" class="list-group">
+
+        {{#each mixed}}
+        {{this}}
+        {{this.id}}
+        {{id}}
+        {{name}}
+        {{this.name}}
+        {{/each}}
+
+        {{#mixed}}
+        {{this}}
+        {{this.id}}
+        {{id}}
+        {{name}}
+        {{this.name}}
+        {{/mixed}}
+
+      </ul>
 
     </div>
   </div>

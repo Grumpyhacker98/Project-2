@@ -15,7 +15,7 @@ function nameSearch() {
   $.ajax({
     url: nameUrl,
     method: "GET"
-  }).then(function (response) {
+  }).then(function(response) {
     console.log(response);
     var drink = response.drinks;
     $("#search-display").html("");
@@ -69,12 +69,16 @@ function nameSearch() {
 
         // print ingredients
         newIngredient = $("<p>");
-        newIngredient.text(ingredient[t] + ",  " + volume[t]);
+        if (volume[t] === null) {
+          newIngredient.text(ingredient[t]);
+        } else {
+          newIngredient.text(ingredient[t] + ",  " + volume[t]);
+        }
 
         $(newDrink).append(newIngredient);
       }
 
-      newBreak = $("<br>")
+      newBreak = $("<br>");
       $(newDrink).append(newBreak);
 
       $("#search-display").append(newDrink);
@@ -96,7 +100,7 @@ function ingredientSearch() {
   $.ajax({
     url: ingredientUrl,
     method: "GET"
-  }).then(function (response) {
+  }).then(function(response) {
     console.log(response);
     var drink = response.drinks;
     $("#search-display").html("");
@@ -135,7 +139,7 @@ function IdSearch() {
   $.ajax({
     url: IDUrl,
     method: "GET"
-  }).then(function (response) {
+  }).then(function(response) {
     console.log(response);
     var drink = response.drinks;
     $("#search-display").html("");
@@ -184,13 +188,15 @@ function IdSearch() {
 
       // print ingredients
       newIngredient = $("<p>");
-      newIngredient.text(ingredient[t] + ",  " + volume[t]);
-
+      if (volume[t] === null) {
+        newIngredient.text(ingredient[t]);
+      } else {
+        newIngredient.text(ingredient[t] + ",  " + volume[t]);
+      }
       $(newDrink).append(newIngredient);
     }
 
-    $("#search-display").append(newDrink)
-
+    $("#search-display").append(newDrink);
   });
 }
 

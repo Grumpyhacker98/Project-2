@@ -1,9 +1,4 @@
 module.exports = function(sequelize, DataTypes) {
-  // var Example = sequelize.define("Example", {
-  //   text: DataTypes.STRING,
-  //   description: DataTypes.TEXT
-  // });
-  // return Example;
   var Mixed = sequelize.define("Mixed", {
     name: DataTypes.STRING,
     alcoholic: DataTypes.BOOLEAN,
