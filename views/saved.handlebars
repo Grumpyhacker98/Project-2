@@ -20,12 +20,15 @@
       <h3>Mixed Drinks:</h3>
       <ul id="mixed-list" class="list-group">
 
+        {{msg}}
+        <br>
         {{#each display}}
-        {{this}}
+        {{this.dataValues.name}}
         {{!-- {{this.id}}
         {{id}}
         {{name}}
         {{this.name}} --}}
+        <br>
         {{/each}}
 
       </ul>
