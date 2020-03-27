@@ -8,9 +8,9 @@ module.exports = function(app) {
   //   });
   // });
 
-  // Create a new example
+  // Create a new example for the create.handlebars page
   app.post("/api/mixed", function(req, res) {
-    console.log(req.body)
+    // console.log(req.body)
     // res.json()
     db.Mixed.create(req.body).then(function(dbExample) {
       res.json(dbExample);

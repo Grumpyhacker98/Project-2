@@ -3,12 +3,6 @@ var db = require("../models");
 module.exports = function(app) {
   // Load index page
   app.get("/", function(req, res) {
-    // db.Mixed.findAll({}).then(function(dbExamples) {
-    //   res.render("index", {
-    //     msg: "Welcome!",
-    //     mixed: dbExamples
-    //   });
-    // });
     res.render("index");
   });
 
@@ -24,30 +18,18 @@ module.exports = function(app) {
 
   // the create page
   app.get("/create", function(req, res) {
-    // db.Example.findAll({}).then(function(dbExamples) {
-    //   res.render("index", {
-    //     msg: "Welcome!",
-    //     examples: dbExamples
-    //   });
-    // });
     res.render("create");
   });
 
   // the search page
   app.get("/search", function(req, res) {
-    // db.Example.findAll({}).then(function(dbExamples) {
-    //   res.render("index", {
-    //     msg: "Welcome!",
-    //     examples: dbExamples
-    //   });
-    // });
     res.render("search");
   });
 
   // the search page
   app.get("/saved", function(req, res) {
     db.Mixed.findAll({}).then(function(dbExamples) {
-      console.log(dbExamples)
+      // console.log(dbExamples)
       res.render("saved", {
         msg: "Welcome!",
         mixed: dbExamples
