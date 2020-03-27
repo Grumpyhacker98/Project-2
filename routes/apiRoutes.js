@@ -11,10 +11,10 @@ module.exports = function(app) {
   // Create a new example
   app.post("/api/mixed", function(req, res) {
     console.log(req.body)
-    res.json()
-    // db.Mixed.create(req.body).then(function(dbExample) {
-    //   res.json(dbExample);
-    // });
+    // res.json()
+    db.Mixed.create(req.body).then(function(dbExample) {
+      res.json(dbExample);
+    });
   });
 
   // // Delete an example by id

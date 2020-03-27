@@ -12,7 +12,7 @@ function MIX() {
     name: $("#create-name")
       .val()
       .trim(),
-    alchaholic: $("#create-alchaholic")
+    alcoholic: $("#create-alchaholic")
       .val()
       .trim(),
     category: $("#create-category")
@@ -21,52 +21,52 @@ function MIX() {
     glass: $("#create-glass")
       .val()
       .trim(),
-    ing1: $("#create-ingredient1")
+    Ing1: $("#create-ingredient1")
       .val()
       .trim(),
-    ingVol1: $("#create-ingredientVol1")
+    Ing1Vol: $("#create-ingredientVol1")
       .val()
       .trim(),
-    ing2: $("#create-ingredient2")
+    Ing2: $("#create-ingredient2")
       .val()
       .trim(),
-    ingVol2: $("#create-ingredientVol2")
+    Ing2Vol: $("#create-ingredientVol2")
       .val()
       .trim(),
-    ing3: $("#create-ingredient3")
+    Ing3: $("#create-ingredient3")
       .val()
       .trim(),
-    ingVol3: $("#create-ingredientVol3")
+    Ing3Vol: $("#create-ingredientVol3")
       .val()
       .trim(),
-    ing4: $("#create-ingredient4")
+    Ing4: $("#create-ingredient4")
       .val()
       .trim(),
-    ingVol4: $("#create-ingredientVol4")
+    Ing4Vol: $("#create-ingredientVol4")
       .val()
       .trim(),
-    ing5: $("#create-ingredient5")
+    Ing5: $("#create-ingredient5")
       .val()
       .trim(),
-    ingVol5: $("#create-ingredientVol5")
+    Ing5Vol: $("#create-ingredientVol5")
       .val()
       .trim(),
-    ing6: $("#create-ingredient6")
+    Ing6: $("#create-ingredient6")
       .val()
       .trim(),
-    ingVol6: $("#create-ingredientVol6")
+    Ing6Vol: $("#create-ingredientVol6")
       .val()
       .trim(),
-    ing7: $("#create-ingredient7")
+    Ing7: $("#create-ingredient7")
       .val()
       .trim(),
-    ingVol7: $("#create-ingredientVol7")
+    Ing7Vol: $("#create-ingredientVol7")
       .val()
       .trim(),
-    ing8: $("#create-ingredient8")
+    Ing8: $("#create-ingredient8")
       .val()
       .trim(),
-    ingVol8: $("#create-ingredientVol8")
+    Ing8Vol: $("#create-ingredientVol8")
       .val()
       .trim()
   };
@@ -81,7 +81,6 @@ function MIX() {
     url: "api/mixed",
     data: JSON.stringify(drink)
   });
-
 }
 
 $(createDrink).on("click", MIX);
