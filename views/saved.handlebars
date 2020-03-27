@@ -16,19 +16,54 @@
   {{!-- Drink Display --}}
   <div class="row">
     <div class="col-md-12 drinks">
-      
+
       <h3>Mixed Drinks:</h3>
       <ul id="mixed-list" class="list-group">
 
-        {{msg}}
-        <br>
         {{#each display}}
-        {{this.dataValues.name}}
-        {{!-- {{this.id}}
-        {{id}}
-        {{name}}
-        {{this.name}} --}}
-        <br>
+        <div class="border m-2">
+
+          <p>ID: {{this.dataValues.id}}</p>
+
+          {{!-- this is the delete button --}}
+          <li data-id="{{this.dataValues.id}}" class="list-group-item">
+            {{!-- <a href="/mixed/{{this.dataValues.id}}">x</a>
+            <button class="btn btn-danger float-right delete">ｘ</button> --}}
+            <button class="btn btn-danger float-right delete"><a href="/api/mixed/{{this.dataValues.id}}">x</a></button>
+          </li>
+
+          <p>{{this.dataValues.name}} is a {{this.dataValues.category}} in a {{this.dataValues.glass}}</p>
+
+          {{!-- dosnt print  --}}
+          {{this.dataValues.alchaholic}}
+
+          {{!-- if values so it displayVal if its there --}}
+          {{#if this.dataValues.Ing1}}
+          <p>{{this.dataValues.Ing1}}, {{this.dataValues.Ing1Vol}}</p>
+          {{/if}}
+          {{#if this.dataValues.Ing2}}
+          <p>{{this.dataValues.Ing2}}, {{this.dataValues.Ing2Vol}}</p>
+          {{/if}}
+          {{#if this.dataValues.Ing3}}
+          <p>{{this.dataValues.Ing3}}, {{this.dataValues.Ing3Vol}}</p>
+          {{/if}}
+          {{#if this.dataValues.Ing4}}
+          <p>{{this.dataValues.Ing4}}, {{this.dataValues.Ing4Vol}}</p>
+          {{/if}}
+          {{#if this.dataValues.Ing5}}
+          <p>{{this.dataValues.Ing5}}, {{this.dataValues.Ing5Vol}}</p>
+          {{/if}}
+          {{#if this.dataValues.Ing6}}
+          <p>{{this.dataValues.Ing6}}, {{this.dataValues.Ing6Vol}}</p>
+          {{/if}}
+          {{#if this.dataValues.Ing7}}
+          <p>{{this.dataValues.Ing7}}, {{this.dataValues.Ing7Vol}}</p>
+          {{/if}}
+          {{#if this.dataValues.Ing8}}
+          <p>{{this.dataValues.Ing8}}, {{this.dataValues.Ing8Vol}}</p>
+          {{/if}}
+
+        </div>
         {{/each}}
 
       </ul>
